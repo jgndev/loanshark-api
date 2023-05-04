@@ -8,7 +8,11 @@ Loan Shark API lets you estimate the true cost of a loan. Send the amount to bor
 and the number of payments and get a breakdown of what you will pay.
 
 Written in <a href="https://go.dev" target="_blank">Go</a> deployed to <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview">Azure Functions</a>,
-you can interact with the live function at [https://loanshark-api.azurewebsites.net](https://loanshark-api.azurewebsites.net)
+you can interact with the live function at [https://loanshark-api.azurewebsites.net/api/loans](https://loanshark-api.azurewebsites.net/api/loans)
+
+### Methods
+
+Loan Shark API only accepts a `POST` request to a valid endpoint, `/api/loans`. 
 
 
 ### 🌐 Loan Request Endpoint
