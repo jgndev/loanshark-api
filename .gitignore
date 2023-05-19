@@ -48,8 +48,8 @@ __queuestorage__
 __azurite_db*__.json
 
 # Editors
-.vscode/
 .idea/
+.vscode/
 
 # Builds
 handler

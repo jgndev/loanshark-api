@@ -2,14 +2,16 @@ package services
 
 import (
 	"fmt"
-	"jgnovak.net/loanshark-api/models"
 	"math"
+
+	"github.com/dustin/go-humanize"
+	"jgnovak.net/loanshark-api/models"
 )
 
 func CalculateLoan(loanRequest models.LoanRequest) models.LoanResponse {
-	// Convert a float value like 1.75 to a currency string like $1.75
+	// Convert a flaot value like 12500.75 to a currency string like $12,500.75
 	loanPaymentFormatter := func(val float64) string {
-		return fmt.Sprintf("$%.2f", val)
+		return fmt.Sprintf("$%v", humanize.FormatFloat("#,###.##", val))
 	}
 
 	// Calculate loan details
